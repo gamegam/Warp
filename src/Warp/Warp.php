@@ -27,7 +27,7 @@ class Warp extends PluginBase implements Listener {
         $name = strtolower($p->getName());
         if ($cmd == "setwarp"){
             if (! isset($args[0])){
-                $p->sendMessage("/setwarp (warpName))");
+                $p->sendMessage("/setwarp (warpName)");
                 return true;
             }
         if(isset($this->db["world"][$args[0]])){
@@ -45,9 +45,9 @@ class Warp extends PluginBase implements Listener {
         $this->db["Y"][$args[0]] = $y;
         $this->db["Z"][$args[0]] = $z;
         $this->save();
-        $p->sendMessage("Added warp $args[0]}");
+        $p->sendMessage("Added warp {$args[0]}");
     }
-    if ($cmd == "Warp"){
+    if ($cmd == "warp"){
         if (!isset($args[0])){
             $p->sendMessage("/warp (warpName)");
             return true;
