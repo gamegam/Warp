@@ -1,7 +1,7 @@
 --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/gamegam/Warp
 build-by-default: true
 branches:
-- main
+- Warp
 projects:
   Warp:
     path: ""
