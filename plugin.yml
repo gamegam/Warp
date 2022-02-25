@@ -1,0 +1,32 @@
+name: Warp
+main: Warp\Warp
+author: gamegam
+version: 3
+api:
+- 4.0.0
+
+commands:
+ setwarp:
+   description: create warp
+   permission: Warp.setwarp.permission
+
+ warp:
+   description: teleport warp
+   permission: Warp.warp.permission
+
+ delwarp:
+   description: wqarp remove
+   permission: Warp.delwarp.permission
+
+permissions:
+  Warp.setwarp.permission:
+    description: create warp`
+    default: op
+
+  Warp.warp.permission:
+    description: warp
+    default: true
+
+  Warp.delwarp.permission:
+    description: warp remove
+    default: op
